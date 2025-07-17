@@ -1,0 +1,57 @@
+/* 饿了么主题色 */
+:root {
+  --el-color-primary: #409EFF;
+  --el-color-success: #67C23A;
+  --el-color-warning: #E6A23C;
+  --el-color-danger: #F56C6C;
+  --el-color-info: #909399;
+  
+  /* 文字色 */
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-text-color-secondary: #909399;
+  --el-text-color-placeholder: #C0C4CC;
+  
+  /* 边框色 */
+  --el-border-color-base: #DCDFE6;
+  --el-border-color-light: #E4E7ED;
+  --el-border-color-lighter: #EBEEF5;
+  --el-border-color-extra-light: #F2F6FC;
+}
+
+/* 基础样式重置 */
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  margin: 0;
+  color: var(--el-text-color-primary);
+  background-color: #f5f7fa;
+}
+
+/* 饿了么风格按钮 */
+.el-button {
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+/* 布局工具类 */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 边距工具类 */
+.mt-10 { margin-top: 10px; }
+.mr-10 { margin-right: 10px; }
+.mb-10 { margin-bottom: 10px; }
+.ml-10 { margin-left: 10px; }
+
+/* 文字工具类 */
+.text-primary { color: var(--el-text-color-primary); }
+.text-regular { color: var(--el-text-color-regular); }
+.text-secondary { color: var(--el-text-color-secondary); }
+.text-placeholder { color: var(--el-text-color-placeholder); }

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "user-component": "./User",
+    "order-component": "./Order",
+    "coupons-component": "./Coupons",
+    "order-list-component": "./OrderList",
+    "orders-component": "./Orders"
+  }
+}

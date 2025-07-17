@@ -1,0 +1,20 @@
+
+@layer utilities {
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.bg-gradient-order {
+    background: linear-gradient(135deg, #1677FF 0%, #40A9FF 100%);
+}
+.product-card {
+    transition: all 0.2s ease;
+}
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+}

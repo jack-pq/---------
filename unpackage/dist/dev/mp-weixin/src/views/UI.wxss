@@ -1,0 +1,41 @@
+
+@layer utilities {
+.content-auto {
+    content-visibility: auto;
+}
+.phone-frame {
+    border: 16px solid #1A1A1A;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 24px;
+    background: #1A1A1A;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.capsule-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 56px;
+    height: 32px;
+    background: #1A1A1A;
+    border-radius: 16px;
+    z-index: 100;
+}
+.module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+}

@@ -1,0 +1,41 @@
+
+@layer utilities {
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.text-balance {
+    text-wrap: balance;
+}
+.phone-frame {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    border: 16px solid #000;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 24px;
+    background: #000;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.faq-item {
+    transition: all 0.3s ease;
+}
+.faq-answer {
+    transition: all 0.3s ease;
+}
+}

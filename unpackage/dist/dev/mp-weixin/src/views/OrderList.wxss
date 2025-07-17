@@ -1,0 +1,16 @@
+
+@layer utilities {
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.product-item {
+    transition: all 0.2s ease;
+}
+.product-item:hover {
+    background-color: #FFF7F0;
+}
+}
